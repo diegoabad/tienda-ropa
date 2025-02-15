@@ -18,7 +18,7 @@ const useFetch = ({ url, method = 'GET', params = {} }) => {
       }
     };
     fetchData();
-  }, [url, method, params]);
+  }, [url, method, JSON.stringify(params)]);
 
   return {
     data,
